@@ -1,0 +1,13 @@
+// basic homework 23 (3A713257)
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void){
+	char word[80];
+	FILE *fp=fopen("data.txt","r");
+	fscanf(fp,"%[^,]",word);
+	printf("%s\n",word);
+	fclose(fp);
+	system("pause"); 
+	return 0;
+}
